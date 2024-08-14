@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Jura } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Jura({ subsets: ["latin"] });
 
 export const metadata = {
   title: "SecurePay",
