@@ -7,11 +7,11 @@ import Image from 'next/image';
 const menuItems = [
     {
         name: 'Home',
-        href: '#',
+        href: '/',
     },
     {
         name: 'Invoice',
-        href: '#',
+        href: '/Invoice',
     },
     {
         name: 'Retrive',
