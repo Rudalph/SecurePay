@@ -21,6 +21,8 @@ import {
 
 import { Button } from "../../Components/ui/button";
 
+import Form from '@/Components/Form';
+
 const page = () => {
     return (
         <div className='mt-36 flex justify-center p-5 flex-wrap'>
@@ -37,15 +39,14 @@ const page = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col justify-end p-4 w-36">
+                <div className="flex flex-col justify-end p-4">
                     <Dialog>
                         <DialogTrigger className='bg-[#5F61E6] rounded-lg p-1 text-white font-extrabold'>Create</DialogTrigger>
                         <DialogContent>
                             <DialogHeader>
-                                <DialogTitle>Are you absolutely sure?</DialogTitle>
+                                <DialogTitle className="font-extrabold text-xl lg:text-2xl">Invoice</DialogTitle>
                                 <DialogDescription>
-                                    This action cannot be undone. This will permanently delete your account
-                                    and remove your data from our servers.
+                                   <Form />
                                 </DialogDescription>
                             </DialogHeader>
                         </DialogContent>
