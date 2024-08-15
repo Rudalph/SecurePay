@@ -31,9 +31,9 @@ const page = () => {
                             Create Invoice
                         </h1>
                         <p className="mt-3 text-sm text-white">
-                            Generate a customized invoice for your recent transaction with our company through Secure Pay,
-                            ensuring a seamless and secure payment experience. Your personalized invoice will include all relevant
-                            details and will be accessible through your Secure Pay domain, providing you with easy access and peace of mind for your records."
+                            Generate a customized invoice for your recent transaction with our company through Secure Pay
+                            ensuring a seamless and secure payment experience Your personalized invoice will include all relevant
+                            details and will be accessible through your Secure Pay domain providing you with easy access and peace of mind for your records
                         </p>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ const page = () => {
                         <p className="mt-3 text-sm text-white">
                         Review your recently generated invoice for your transaction with our company via Secure Pay. This detailed invoice 
                         outlines all pertinent information and is securely stored on your Secure Pay domain. Access your invoice with ease 
-                        and confidence, knowing that your payment and transaction details are safely documented for your convenience and peace of mind."
+                        and confidence knowing that your payment and transaction details are safely documented for your convenience and peace of mind.
                         </p>
                     </div>
                 </div>
