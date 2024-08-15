@@ -30,7 +30,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='h-24 fixed top-0 z-50 w-full px-10 bg-[#232333]'>
+        <div className='h-24 fixed top-0 z-50 w-full px-5 lg:px-10 bg-[#232333]'>
             <div className="w-full bg-[#2C2D43] mt-5 border-2 border-[#3A3952] rounded-lg">
                 <div className="mx-auto flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
                     <div className="inline-flex items-center">
