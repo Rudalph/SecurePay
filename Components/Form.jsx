@@ -1,65 +1,69 @@
 "use client"
-import React,{useState} from 'react'
+import React,{useState, useContext} from 'react'
 import { Input } from "../Components/ui/input";
 import { Button } from "../Components/ui/button";
+import { DataContext } from '../Components/Datacontext';
 
 
 const Form = () => {
 
-    const [data, setData] = useState({
-       invoiceNumber:'',
-       invoiceDate:'',
-       spocName:'',
-       companyName:'',
-       contact:'',
-       email:'',
-       address:'',
-       additionalDetails:'',
-       accountHolderName:'',
-       accountNumber:'',
-       panNumber:'',
-       ifscCode:'',
-       branchName:'',
-       additional:'',
-       total:'',
-       sr1:'',
-       sr2:'',
-       sr3:'',
-       sr4:'',
-       sr5:'',
-       item1:'',
-       item2:'',
-       item3:'',
-       item4:'',
-       item5:'',
-       rate1:'',
-       rate2:'',
-       rate3:'',
-       rate4:'',
-       rate5:'',
-       quantity1:'',
-       quantity2:'',
-       quantity3:'',
-       quantity4:'',
-       quantity5:'',
-       ammount1:'',
-       ammount2:'',
-       ammount3:'',
-       ammount4:'',
-       ammount5:'',
-    })
+    // const [data, setData] = useState({
+    //    invoiceNumber:'',
+    //    invoiceDate:'',
+    //    spocName:'',
+    //    companyName:'',
+    //    contact:'',
+    //    email:'',
+    //    address:'',
+    //    additionalDetails:'',
+    //    accountHolderName:'',
+    //    accountNumber:'',
+    //    panNumber:'',
+    //    ifscCode:'',
+    //    branchName:'',
+    //    additional:'',
+    //    total:'',
+    //    sr1:'',
+    //    sr2:'',
+    //    sr3:'',
+    //    sr4:'',
+    //    sr5:'',
+    //    item1:'',
+    //    item2:'',
+    //    item3:'',
+    //    item4:'',
+    //    item5:'',
+    //    rate1:'',
+    //    rate2:'',
+    //    rate3:'',
+    //    rate4:'',
+    //    rate5:'',
+    //    quantity1:'',
+    //    quantity2:'',
+    //    quantity3:'',
+    //    quantity4:'',
+    //    quantity5:'',
+    //    ammount1:'',
+    //    ammount2:'',
+    //    ammount3:'',
+    //    ammount4:'',
+    //    ammount5:'',
+    // })
+
+    const { data, setData } = useContext(DataContext);
 
     const handleInputChange = (e) => {
-        const {name , value} = e.target;
-        setData((prevData)=>({
+        const { name, value } = e.target;
+        console.log(`Updating ${name} to ${value}`);
+        setData((prevData) => ({
             ...prevData,
-            [name]:value
-        }))
-    }
-
+            [name]: value
+        }));
+    };
+    
     const submitData = () => {
-        console.log("data value",data)
-    }
+        console.log("Data value:", data);
+    };
 
     return (
         <div className='mt-5'>

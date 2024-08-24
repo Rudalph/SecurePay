@@ -23,8 +23,13 @@ import { Button } from "../../Components/ui/button";
 
 import Form from '@/Components/Form';
 
+import { DataProvider } from '../../Components/Datacontext';
+
+import InvoiceTable from '@/Components/Table';
+
 const page = () => {
     return (
+        <DataProvider>
         <div className='mt-36 flex justify-center p-5 flex-wrap'>
             <div className="max-w-2xl flex justify-between rounded-md border border-[#5F61E6] md:flex-row m-5">
                 <div>
@@ -46,7 +51,9 @@ const page = () => {
                             <DialogHeader>
                                 <DialogTitle className="font-extrabold text-xl lg:text-2xl">Invoice</DialogTitle>
                                 <DialogDescription>
+                                
                                    <Form />
+                                
                                 </DialogDescription>
                             </DialogHeader>
                         </DialogContent>
@@ -73,7 +80,13 @@ const page = () => {
                         <DrawerContent>
                             <DrawerHeader>
                                 <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-                                <DrawerDescription>This action cannot be undone.</DrawerDescription>
+                               
+                                <DrawerDescription>
+                                    <div className='h-[500px] overflow-y-scroll no-scrollbar'>
+                                       <InvoiceTable />
+                                    </div>
+                                </DrawerDescription>
+                               
                             </DrawerHeader>
                             <DrawerFooter>
                                 <DrawerClose>
@@ -86,6 +99,7 @@ const page = () => {
                 </div>
             </div>
         </div>
+        </DataProvider>
     )
 }
 
