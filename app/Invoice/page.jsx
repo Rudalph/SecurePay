@@ -69,7 +69,7 @@ const page = () => {
                 </div>
                 <div className="flex flex-col justify-end p-4 w-36">
                     <Drawer>
-                        <DrawerTrigger className='bg-[#5F61E6] rounded-lg p-1 text-white font-extrabold'>Preview</DrawerTrigger>
+                        <DrawerTrigger className='bg-[#5F61E6] rounded-lg p-1 text-white font-extrabold' >Preview</DrawerTrigger>
                         <DrawerContent>
                             <DrawerHeader>
                                 <DrawerTitle>Are you absolutely sure?</DrawerTitle>
